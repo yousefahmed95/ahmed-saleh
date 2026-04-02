@@ -25,7 +25,7 @@ export const categories: Category[] = [
     name: "المطابخ",
     icon: "ChefHat",
     description: "مطابخ عصرية بتصاميم فريدة وعملية",
-    image: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=600&q=80",
+    image: "https://images.unsplash.com/photo-1600585152220-90363fe7e115?w=600&q=80",
   },
   {
     id: "bedrooms",
