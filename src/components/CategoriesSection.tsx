@@ -1,7 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import { categories } from "@/data/products";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
-import { ChefHat, Bed, Baby, Sofa, UtensilsCrossed, Monitor, BookOpen } from "lucide-react";
+import { ChefHat, Bed, Baby, Sofa, UtensilsCrossed, Monitor, BookOpen, Armchair, Lamp } from "lucide-react";
 
 const iconMap: Record<string, React.ReactNode> = {
   ChefHat: <ChefHat size={32} />,
@@ -11,6 +11,8 @@ const iconMap: Record<string, React.ReactNode> = {
   UtensilsCrossed: <UtensilsCrossed size={32} />,
   Monitor: <Monitor size={32} />,
   BookOpen: <BookOpen size={32} />,
+  Armchair: <Armchair size={32} />,
+  Lamp: <Lamp size={32} />,
 };
 
 const CategoriesSection = () => {

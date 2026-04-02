@@ -39,7 +39,7 @@ const HeroSection = () => {
           </button>
           <button
             onClick={() => document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })}
-            className="btn-outline-primary border-primary-foreground text-primary-foreground hover:bg-primary-foreground/10"
+            className="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold transition-all duration-300 hover:bg-white/10"
           >
             تواصل معنا
           </button>
