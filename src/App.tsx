@@ -7,6 +7,7 @@ import Index from "./pages/Index";
 import CategoryPage from "./pages/CategoryPage";
 import ProductPage from "./pages/ProductPage";
 import NotFound from "./pages/NotFound";
+import ScrollToTopOnNavigate from "./components/ScrollToTopOnNavigate";
 
 const queryClient = new QueryClient();
 
@@ -16,6 +17,7 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter>
+        <ScrollToTopOnNavigate />
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/category/:id" element={<CategoryPage />} />
