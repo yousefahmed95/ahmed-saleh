@@ -5,7 +5,9 @@ export interface Product {
   price: number;
   description: string;
   woodType: string;
+  paintType: string;
   dimensions: string;
+  customNote: string;
   features: string[];
   image: string;
   gallery: string[];
