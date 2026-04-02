@@ -118,12 +118,10 @@ const ContactSection = () => {
                 فيسبوك
               </a>
               <a
-                href="https://instagram.com"
-                target="_blank"
-                rel="noopener noreferrer"
+                href="tel:+201001234567"
                 className="flex-1 bg-card rounded-xl p-4 border border-border text-center card-hover font-semibold text-primary"
               >
-                إنستجرام
+                اتصل بنا
               </a>
             </div>
           </div>

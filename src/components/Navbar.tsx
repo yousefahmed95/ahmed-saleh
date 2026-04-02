@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Menu, X, Moon, Sun } from "lucide-react";
+import { Menu, X, Moon, Sun, Phone } from "lucide-react";
 import { useTheme } from "@/hooks/useTheme";
 import logo from "@/assets/logo.png";
 
@@ -53,6 +53,13 @@ const Navbar = () => {
 
           {/* Actions */}
           <div className="flex items-center gap-3">
+            <a
+              href="tel:+201001234567"
+              className="p-2 rounded-full bg-primary text-primary-foreground hover:opacity-90 transition-colors"
+              aria-label="اتصل بنا"
+            >
+              <Phone size={20} />
+            </a>
             <button
               onClick={toggle}
               className="p-2 rounded-full bg-secondary hover:bg-secondary/80 transition-colors"

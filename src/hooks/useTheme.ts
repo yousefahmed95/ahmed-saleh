@@ -3,9 +3,11 @@ import { useState, useEffect } from "react";
 export const useTheme = () => {
   const [isDark, setIsDark] = useState(() => {
     if (typeof window !== "undefined") {
-      return localStorage.getItem("theme") === "dark";
+      const saved = localStorage.getItem("theme");
+      if (saved) return saved === "dark";
+      return true; // default to dark mode
     }
-    return false;
+    return true;
   });
 
   useEffect(() => {
