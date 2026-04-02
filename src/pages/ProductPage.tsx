@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useParams, Link } from "react-router-dom";
-import { ArrowRight, MessageCircle, Ruler, TreePine, Star, Check } from "lucide-react";
+import { ArrowRight, MessageCircle, Ruler, TreePine, Star, Check, Paintbrush, Info } from "lucide-react";
 import { products, categories } from "@/data/products";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
