@@ -112,7 +112,7 @@ const CategoryPage = () => {
                   <div className="p-5">
                     <h3 className="font-bold text-lg mb-1">{product.name}</h3>
                     <p className="text-muted-foreground text-sm mb-3 line-clamp-2">{product.description}</p>
-                    <div className="flex items-center justify-between">
+                    <div className="flex items-center justify-between mb-3">
                       <span className="text-xl font-black text-gradient">
                         {product.price.toLocaleString("ar-EG")} ج.م
                       </span>
@@ -120,6 +120,10 @@ const CategoryPage = () => {
                         {product.woodType}
                       </span>
                     </div>
+                    <span className="text-primary text-sm font-medium flex items-center gap-1 justify-center group-hover:underline">
+                      اضغط لرؤية التفاصيل
+                      <ArrowRight size={14} className="rotate-180" />
+                    </span>
                   </div>
                 </button>
               ))}
