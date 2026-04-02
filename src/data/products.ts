@@ -67,7 +67,21 @@ export const categories: Category[] = [
     name: "المكتبات",
     icon: "BookOpen",
     description: "مكتبات خشبية أنيقة لتنظيم كتبك",
-    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&q=80",
+    image: "https://images.unsplash.com/photo-1507842217343-583bb7270b66?w=600&q=80",
+  },
+  {
+    id: "corners",
+    name: "الركنات",
+    icon: "Armchair",
+    description: "ركنات عصرية تناسب مساحة منزلك وتوفر الراحة",
+    image: "https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?w=600&q=80",
+  },
+  {
+    id: "niche",
+    name: "النيش",
+    icon: "Lamp",
+    description: "نيش فاخر لعرض التحف والمقتنيات بأناقة",
+    image: "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=600&q=80",
   },
 ];
 
