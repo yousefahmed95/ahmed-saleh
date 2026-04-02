@@ -83,7 +83,7 @@ export const categories: Category[] = [
     name: "النيش",
     icon: "Lamp",
     description: "نيش فاخر لعرض التحف والمقتنيات بأناقة",
-    image: "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=600&q=80",
+    image: "https://images.unsplash.com/photo-1594040226829-7f251ab46d80?w=600&q=80",
   },
 ];
 
@@ -96,7 +96,9 @@ export const products: Product[] = [
     price: 45000,
     description: "مطبخ خشبي كلاسيكي بتصميم فاخر مع وحدات تخزين واسعة وسطح رخامي أنيق",
     woodType: "خشب زان",
+    paintType: "دوكو",
     dimensions: "3.5م × 2.5م",
+    customNote: "المقاسات والألوان حسب الطلب",
     features: ["وحدات تخزين واسعة", "سطح رخامي", "إضاءة LED مدمجة", "مقابض نحاسية"],
     image: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=600&q=80",
     gallery: [
