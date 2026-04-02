@@ -83,7 +83,7 @@ const ProductPage = () => {
               </p>
 
               {/* Specs */}
-              <div className="grid grid-cols-2 gap-4 mb-8">
+              <div className="grid grid-cols-2 gap-4 mb-4">
                 <div className="bg-card rounded-xl p-4 border border-border flex items-center gap-3">
                   <TreePine size={22} className="text-primary shrink-0" />
                   <div>
@@ -92,10 +92,24 @@ const ProductPage = () => {
                   </div>
                 </div>
                 <div className="bg-card rounded-xl p-4 border border-border flex items-center gap-3">
+                  <Paintbrush size={22} className="text-primary shrink-0" />
+                  <div>
+                    <span className="text-xs text-muted-foreground block">نوع الدهانات</span>
+                    <span className="font-semibold text-sm">{product.paintType}</span>
+                  </div>
+                </div>
+                <div className="bg-card rounded-xl p-4 border border-border flex items-center gap-3">
                   <Ruler size={22} className="text-primary shrink-0" />
                   <div>
                     <span className="text-xs text-muted-foreground block">المقاسات</span>
                     <span className="font-semibold text-sm">{product.dimensions}</span>
+                  </div>
+                </div>
+                <div className="bg-card rounded-xl p-4 border border-border flex items-center gap-3">
+                  <Info size={22} className="text-primary shrink-0" />
+                  <div>
+                    <span className="text-xs text-muted-foreground block">ملاحظة</span>
+                    <span className="font-semibold text-sm">{product.customNote}</span>
                   </div>
                 </div>
               </div>
