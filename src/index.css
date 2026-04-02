@@ -1,96 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
-
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --background: 35 30% 97%;
+    --foreground: 25 30% 12%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: 35 25% 95%;
+    --card-foreground: 25 30% 12%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 35 30% 97%;
+    --popover-foreground: 25 30% 12%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 25 55% 35%;
+    --primary-foreground: 35 30% 97%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 35 35% 88%;
+    --secondary-foreground: 25 30% 18%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 35 20% 92%;
+    --muted-foreground: 25 15% 45%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 38 70% 50%;
+    --accent-foreground: 25 30% 12%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 30 20% 85%;
+    --input: 30 20% 85%;
+    --ring: 25 55% 35%;
 
-    --radius: 0.5rem;
+    --radius: 0.75rem;
 
-    --sidebar-background: 0 0% 98%;
+    --sidebar-background: 35 25% 95%;
+    --sidebar-foreground: 25 30% 12%;
+    --sidebar-primary: 25 55% 35%;
+    --sidebar-primary-foreground: 35 30% 97%;
+    --sidebar-accent: 35 35% 88%;
+    --sidebar-accent-foreground: 25 30% 18%;
+    --sidebar-border: 30 20% 85%;
+    --sidebar-ring: 25 55% 35%;
 
-    --sidebar-foreground: 240 5.3% 26.1%;
-
-    --sidebar-primary: 240 5.9% 10%;
-
-    --sidebar-primary-foreground: 0 0% 98%;
-
-    --sidebar-accent: 240 4.8% 95.9%;
-
-    --sidebar-accent-foreground: 240 5.9% 10%;
-
-    --sidebar-border: 220 13% 91%;
-
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    /* Custom tokens */
+    --wood-gradient: linear-gradient(135deg, hsl(25 55% 35%), hsl(38 70% 50%));
+    --hero-overlay: linear-gradient(135deg, hsla(25, 55%, 20%, 0.85), hsla(25, 30%, 12%, 0.7));
+    --card-hover-shadow: 0 20px 40px -12px hsla(25, 55%, 35%, 0.2);
+    --gold: 38 70% 50%;
+    --cream: 40 40% 94%;
+    --wood-light: 30 30% 70%;
+    --wood-dark: 20 40% 22%;
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
+    --background: 20 25% 8%;
+    --foreground: 35 25% 92%;
 
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
+    --card: 20 20% 12%;
+    --card-foreground: 35 25% 92%;
 
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 20 20% 12%;
+    --popover-foreground: 35 25% 92%;
 
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
+    --primary: 38 65% 55%;
+    --primary-foreground: 20 25% 8%;
 
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 20 15% 18%;
+    --secondary-foreground: 35 25% 85%;
 
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
+    --muted: 20 15% 15%;
+    --muted-foreground: 30 15% 55%;
 
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
+    --accent: 38 70% 50%;
+    --accent-foreground: 20 25% 8%;
 
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --border: 20 15% 20%;
+    --input: 20 15% 20%;
+    --ring: 38 65% 55%;
+
+    --sidebar-background: 20 20% 10%;
+    --sidebar-foreground: 35 25% 92%;
+    --sidebar-primary: 38 65% 55%;
+    --sidebar-primary-foreground: 20 25% 8%;
+    --sidebar-accent: 20 15% 18%;
+    --sidebar-accent-foreground: 35 25% 85%;
+    --sidebar-border: 20 15% 20%;
+    --sidebar-ring: 38 65% 55%;
+
+    --hero-overlay: linear-gradient(135deg, hsla(20, 25%, 5%, 0.9), hsla(20, 20%, 8%, 0.8));
+    --card-hover-shadow: 0 20px 40px -12px hsla(38, 70%, 50%, 0.15);
   }
 }
 
@@ -99,7 +103,78 @@ All colors MUST be HSL.
     @apply border-border;
   }
 
+  html {
+    scroll-behavior: smooth;
+    direction: rtl;
+  }
+
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-cairo;
+  }
+}
+
+@layer components {
+  .wood-gradient {
+    background: var(--wood-gradient);
+  }
+
+  .hero-overlay {
+    background: var(--hero-overlay);
+  }
+
+  .card-hover {
+    @apply transition-all duration-300 ease-out;
+  }
+
+  .card-hover:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--card-hover-shadow);
+  }
+
+  .section-fade {
+    @apply opacity-0 translate-y-8 transition-all duration-700 ease-out;
+  }
+
+  .section-fade.visible {
+    @apply opacity-100 translate-y-0;
+  }
+
+  .nav-link {
+    @apply relative text-foreground/80 hover:text-primary transition-colors duration-200;
+  }
+
+  .nav-link::after {
+    content: '';
+    @apply absolute bottom-0 right-0 w-0 h-0.5 bg-primary transition-all duration-300;
+  }
+
+  .nav-link:hover::after {
+    @apply w-full;
+  }
+
+  .btn-primary {
+    @apply wood-gradient text-primary-foreground px-8 py-3 rounded-lg font-semibold text-lg
+    transition-all duration-300 hover:opacity-90 hover:shadow-lg active:scale-95;
+  }
+
+  .btn-outline-primary {
+    @apply border-2 border-primary text-primary px-8 py-3 rounded-lg font-semibold
+    transition-all duration-300 hover:bg-primary hover:text-primary-foreground;
+  }
+
+  .product-card-overlay {
+    @apply absolute inset-0 bg-gradient-to-t from-foreground/60 to-transparent
+    opacity-0 transition-opacity duration-300;
+  }
+
+  .group:hover .product-card-overlay {
+    @apply opacity-100;
+  }
+}
+
+@layer utilities {
+  .text-gradient {
+    @apply bg-clip-text text-transparent;
+    background-image: var(--wood-gradient);
   }
 }
