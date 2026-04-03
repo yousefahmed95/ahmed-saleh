@@ -18,6 +18,14 @@ const Navbar = () => {
 
   const handleNavClick = (path: string) => {
     setIsOpen(false);
+    if (path === "/") {
+      if (location.pathname !== "/") {
+        window.location.href = "/";
+      } else {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      }
+      return;
+    }
     if (path.startsWith("/#")) {
       const id = path.slice(2);
       if (location.pathname !== "/") {
