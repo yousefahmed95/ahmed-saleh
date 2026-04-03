@@ -9,7 +9,9 @@ const ContactSection = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    toast.success("تم إرسال رسالتك بنجاح! سنتواصل معك قريباً");
+    const text = `مرحباً، أنا ${form.name}%0Aرقم هاتفي: ${form.phone}%0A${form.message}`;
+    window.open(`https://wa.me/201001234567?text=${text}`, "_blank");
+    toast.success("تم فتح الواتساب لإرسال رسالتك!");
     setForm({ name: "", phone: "", message: "" });
   };
 
