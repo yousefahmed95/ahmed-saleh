@@ -1,7 +1,36 @@
-import { Link } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import { Phone, MapPin, Heart } from "lucide-react";
 
-const Footer = () => (
+const footerLinks = [
+  { label: "الرئيسية", path: "/" },
+  { label: "الأقسام", path: "/#categories" },
+  { label: "من نحن", path: "/#about" },
+  { label: "تواصل معنا", path: "/#contact" },
+];
+
+const Footer = () => {
+  const location = useLocation();
+
+  const handleClick = (path: string) => {
+    if (path === "/") {
+      if (location.pathname !== "/") {
+        window.location.href = "/";
+      } else {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      }
+      return;
+    }
+    if (path.startsWith("/#")) {
+      const id = path.slice(2);
+      if (location.pathname !== "/") {
+        window.location.href = path;
+        return;
+      }
+      document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
+  return (
   <footer className="bg-card border-t border-border">
     <div className="container mx-auto px-4 py-12">
       <div className="grid md:grid-cols-3 gap-8">
@@ -17,10 +46,15 @@ const Footer = () => (
         <div>
           <h4 className="font-bold mb-4">روابط سريعة</h4>
           <div className="flex flex-col gap-2">
-            <Link to="/" className="text-muted-foreground hover:text-primary transition-colors">الرئيسية</Link>
-            <Link to="/#categories" className="text-muted-foreground hover:text-primary transition-colors">الأقسام</Link>
-            <Link to="/#about" className="text-muted-foreground hover:text-primary transition-colors">من نحن</Link>
-            <Link to="/#contact" className="text-muted-foreground hover:text-primary transition-colors">تواصل معنا</Link>
+            {footerLinks.map((item) => (
+              <button
+                key={item.path}
+                onClick={() => handleClick(item.path)}
+                className="text-right text-muted-foreground hover:text-primary transition-colors"
+              >
+                {item.label}
+              </button>
+            ))}
           </div>
         </div>
 
