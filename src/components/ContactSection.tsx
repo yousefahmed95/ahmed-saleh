@@ -45,10 +45,21 @@ const ContactSection = () => {
               <input
                 type="tel"
                 value={form.phone}
-                onChange={(e) => setForm({ ...form, phone: e.target.value })}
+                onChange={(e) => {
+                  const val = e.target.value.replace(/[^0-9+\-() ]/g, "");
+                  setForm({ ...form, phone: val });
+                }}
+                onKeyDown={(e) => {
+                  const allowed = /[0-9+\-() ]|Backspace|Delete|ArrowLeft|ArrowRight|Tab|Home|End/;
+                  if (!allowed.test(e.key) && !e.ctrlKey && !e.metaKey) {
+                    e.preventDefault();
+                  }
+                }}
                 required
                 className="w-full px-4 py-3 rounded-lg bg-background border border-border focus:ring-2 focus:ring-primary/30 focus:border-primary outline-none transition-all"
                 placeholder="أدخل رقم هاتفك"
+                inputMode="tel"
+                dir="ltr"
               />
             </div>
             <div>
