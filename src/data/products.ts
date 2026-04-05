@@ -366,8 +366,8 @@ export const products: Product[] = [
     dimensions: "180×45×200 سم",
     customNote: "المقاسات والألوان حسب الطلب",
     features: ["أبواب زجاجية", "إضاءة داخلية", "نقوشات يدوية", "أرفف قابلة للتعديل"],
-    image: "https://images.unsplash.com/photo-1594040226829-7f251ab46d80?w=600&q=80",
-    gallery: [],
+    image: "https://images.unsplash.com/photo-1595428774223-ef52624120d2?w=600&q=80",
+    gallery: ["https://images.unsplash.com/photo-1595428774223-ef52624120d2?w=800&q=80"],
   },
   {
     id: "n2",
