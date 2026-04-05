@@ -380,7 +380,7 @@ export const products: Product[] = [
     dimensions: "160×40×190 سم",
     customNote: "المقاسات والألوان حسب الطلب",
     features: ["تصميم بسيط", "ألوان متعددة", "سهل التركيب", "مساحة تخزين واسعة"],
-    image: "https://images.unsplash.com/photo-1594040226829-7f251ab46d80?w=600&q=80",
+    image: "https://images.unsplash.com/photo-1595428774223-ef52624120d2?w=600&q=80",
     gallery: [],
   },
 ];
