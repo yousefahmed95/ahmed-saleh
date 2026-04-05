@@ -83,7 +83,7 @@ export const categories: Category[] = [
     name: "النيش",
     icon: "Lamp",
     description: "نيش فاخر لعرض التحف والمقتنيات بأناقة",
-    image: "https://images.unsplash.com/photo-1594040226829-7f251ab46d80?w=600&q=80",
+    image: "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=600&q=80",
   },
 ];
 
