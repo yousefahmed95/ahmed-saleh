@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { Menu, X, Moon, Sun, Phone } from "lucide-react";
 import { useTheme } from "@/hooks/useTheme";
 import logo from "@/assets/logo.png";
@@ -15,12 +15,13 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const { isDark, toggle } = useTheme();
   const location = useLocation();
+  const navigate = useNavigate();
 
   const handleNavClick = (path: string) => {
     setIsOpen(false);
     if (path === "/") {
       if (location.pathname !== "/") {
-        window.location.href = "/";
+        navigate("/");
       } else {
         window.scrollTo({ top: 0, behavior: "smooth" });
       }
@@ -29,7 +30,7 @@ const Navbar = () => {
     if (path.startsWith("/#")) {
       const id = path.slice(2);
       if (location.pathname !== "/") {
-        window.location.href = path;
+        navigate({ pathname: "/", hash: `#${id}` });
         return;
       }
       document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });

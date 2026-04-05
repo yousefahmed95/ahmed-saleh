@@ -1,4 +1,4 @@
-import { useLocation } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import { Phone, MapPin, Heart } from "lucide-react";
 
 const footerLinks = [
@@ -10,11 +10,12 @@ const footerLinks = [
 
 const Footer = () => {
   const location = useLocation();
+  const navigate = useNavigate();
 
   const handleClick = (path: string) => {
     if (path === "/") {
       if (location.pathname !== "/") {
-        window.location.href = "/";
+        navigate("/");
       } else {
         window.scrollTo({ top: 0, behavior: "smooth" });
       }
@@ -23,7 +24,7 @@ const Footer = () => {
     if (path.startsWith("/#")) {
       const id = path.slice(2);
       if (location.pathname !== "/") {
-        window.location.href = path;
+        navigate({ pathname: "/", hash: `#${id}` });
         return;
       }
       document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
