@@ -10,13 +10,14 @@ import NotFound from "./pages/NotFound";
 import ScrollToTopOnNavigate from "./components/ScrollToTopOnNavigate";
 
 const queryClient = new QueryClient();
+const routerBasename = import.meta.env.BASE_URL === "/" ? undefined : import.meta.env.BASE_URL.replace(/\/$/, "");
 
 const App = () => (
   <QueryClientProvider client={queryClient}>
     <TooltipProvider>
       <Toaster />
       <Sonner />
-      <BrowserRouter>
+      <BrowserRouter basename={routerBasename}>
         <ScrollToTopOnNavigate />
         <Routes>
           <Route path="/" element={<Index />} />
