@@ -76,7 +76,7 @@ const ProductPage = () => {
             <div>
               <h1 className="text-3xl md:text-4xl font-bold mb-4">{product.name}</h1>
               <p className="text-2xl font-black text-gradient mb-6">
-                {product.price.toLocaleString("ar-EG")} ج.م
+                يبدأ من {product.price.toLocaleString("ar-EG")} ج.م
               </p>
               <p className="text-muted-foreground text-lg leading-relaxed mb-8">
                 {product.description}

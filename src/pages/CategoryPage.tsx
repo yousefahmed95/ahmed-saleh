@@ -114,7 +114,7 @@ const CategoryPage = () => {
                     <p className="text-muted-foreground text-sm mb-3 line-clamp-2">{product.description}</p>
                     <div className="flex items-center justify-between mb-3">
                       <span className="text-xl font-black text-gradient">
-                        {product.price.toLocaleString("ar-EG")} ج.م
+                        يبدأ من {product.price.toLocaleString("ar-EG")} ج.م
                       </span>
                       <span className="text-xs text-muted-foreground bg-secondary px-3 py-1 rounded-full">
                         {product.woodType}
