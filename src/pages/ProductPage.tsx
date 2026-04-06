@@ -6,6 +6,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import ScrollToTop from "@/components/ScrollToTop";
 import WhatsAppButton from "@/components/WhatsAppButton";
+import ImageZoom from "@/components/ImageZoom";
 
 const ProductPage = () => {
   const { id } = useParams<{ id: string }>();
