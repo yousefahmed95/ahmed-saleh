@@ -49,13 +49,13 @@ const ProductPage = () => {
           <div className="grid md:grid-cols-2 gap-8 md:gap-12">
             {/* Gallery */}
             <div>
-              <div className="aspect-square rounded-2xl overflow-hidden bg-card border border-border mb-4">
-                <img
-                  src={allImages[selectedImage]}
-                  alt={product.name}
-                  className="w-full h-full object-cover"
-                />
-              </div>
+              <ImageZoom
+                src={allImages[selectedImage]}
+                alt={product.name}
+                allImages={allImages}
+                selectedIndex={selectedImage}
+                onChangeIndex={setSelectedImage}
+              />
               {allImages.length > 1 && (
                 <div className="flex gap-3">
                   {allImages.map((img, i) => (
