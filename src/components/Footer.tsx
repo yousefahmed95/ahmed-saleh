@@ -37,9 +37,9 @@ const Footer = () => {
       <div className="grid md:grid-cols-3 gap-8">
         {/* Brand */}
         <div>
-          <h3 className="text-xl font-bold text-gradient mb-4">المعلم للموبيليات</h3>
+          <h3 className="text-xl font-bold text-gradient mb-4">ورشة أحمد وصابر</h3>
           <p className="text-muted-foreground leading-relaxed">
-            صناعة أثاث خشبي فاخر بأيدي خبيرة منذ أكثر من 25 عاماً
+            صناعة أثاث خشبي فاخر بأيدي خبيرة منذ أكثر من 25 عامًا
           </p>
         </div>
 
@@ -65,11 +65,11 @@ const Footer = () => {
           <div className="space-y-3 text-muted-foreground">
             <div className="flex items-center gap-2">
               <Phone size={16} className="text-primary" />
-              <span dir="ltr">+20 100 123 4567</span>
+              <span dir="ltr">+20 102 184 2186</span>
             </div>
             <div className="flex items-center gap-2">
               <MapPin size={16} className="text-primary" />
-              <span>شارع النجارين، القاهرة</span>
+              <span>أسيوط - أول أسيوط - مصنع سيد - بجوار مسجد الشهداء</span>
             </div>
           </div>
         </div>
@@ -77,7 +77,7 @@ const Footer = () => {
 
       <div className="border-t border-border mt-8 pt-8 text-center text-muted-foreground text-sm">
         <p className="flex items-center justify-center gap-1">
-          جميع الحقوق محفوظة © {new Date().getFullYear()} المعلم للموبيليات
+          جميع الحقوق محفوظة © {new Date().getFullYear()} ورشة أحمد وصابر
           <Heart size={14} className="text-primary" />
         </p>
       </div>

@@ -100,9 +100,9 @@ export const products: Product[] = [
     dimensions: "3.5م × 2.5م",
     customNote: "المقاسات والألوان حسب الطلب",
     features: ["وحدات تخزين واسعة", "سطح رخامي", "إضاءة LED مدمجة", "مقابض نحاسية"],
-    image: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=600&q=80",
+    image: "https://images.unsplash.com/photo-1600585152220-90363fe7e115?w=600&q=80",
     gallery: [
-      "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&q=80",
+      "https://images.unsplash.com/photo-1600585152220-90363fe7e115?w=800&q=80",
       "https://images.unsplash.com/photo-1556909172-54557c7e4fb7?w=800&q=80",
       "https://images.unsplash.com/photo-1600585152220-90363fe7e115?w=800&q=80",
     ],
@@ -121,7 +121,7 @@ export const products: Product[] = [
     image: "https://images.unsplash.com/photo-1600585152220-90363fe7e115?w=600&q=80",
     gallery: [
       "https://images.unsplash.com/photo-1600585152220-90363fe7e115?w=800&q=80",
-      "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&q=80",
+      "https://images.unsplash.com/photo-1600585152220-90363fe7e115?w=800&q=80",
     ],
   },
   {
@@ -308,7 +308,7 @@ export const products: Product[] = [
     dimensions: "300×40×220 سم",
     customNote: "المقاسات والألوان حسب الطلب",
     features: ["6 أرفف قابلة للتعديل", "أبواب زجاجية", "إضاءة داخلية", "نقوشات كلاسيكية"],
-    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&q=80",
+    image: "https://images.unsplash.com/photo-1507842217343-583bb7270b66?w=600&q=80",
     gallery: [],
   },
   {

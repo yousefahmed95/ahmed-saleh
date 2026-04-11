@@ -31,7 +31,7 @@ const HeroSection = () => {
           className="text-lg md:text-xl mb-10 opacity-0 animate-fade-in-up max-w-xl mx-auto"
           style={{ color: "hsl(35, 25%, 85%)", animationDelay: "0.2s" }}
         >
-          نصنع لك أثاثاً يجمع بين الفخامة والمتانة، بأجود أنواع الأخشاب وأدق التفاصيل
+          نصنع لك أثاثًا يجمع بين الفخامة والمتانة، بأجود أنواع الأخشاب وأدق التفاصيل
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center opacity-0 animate-fade-in-up" style={{ animationDelay: "0.4s" }}>
           <button onClick={scrollToCategories} className="btn-primary">

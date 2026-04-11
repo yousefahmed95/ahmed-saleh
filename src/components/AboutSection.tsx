@@ -35,12 +35,12 @@ const AboutSection = () => {
             <h2 className="text-3xl md:text-5xl font-bold mb-6">من نحن</h2>
             <div className="w-16 h-1 wood-gradient rounded-full mb-6" />
             <p className="text-muted-foreground text-lg leading-relaxed mb-4">
-              نحن ورشة <strong className="text-foreground">المعلم للموبيليات</strong>، نعمل في مجال صناعة الأثاث الخشبي منذ أكثر من 25 عاماً.
-              نجمع بين الحرفية التقليدية والتصاميم العصرية لنقدم لعملائنا أثاثاً يدوم لسنوات.
+              نحن ورشة <strong className="text-foreground">ورشة أحمد وصابر</strong>، نعمل في مجال صناعة الأثاث الخشبي منذ أكثر من 25 عامًا.
+              نجمع بين الحرفية التقليدية والتصاميم العصرية لنقدم لعملائنا أثاثًا يدوم لسنوات.
             </p>
             <p className="text-muted-foreground text-lg leading-relaxed mb-8">
               نستخدم أجود أنواع الأخشاب الطبيعية ونهتم بأدق التفاصيل في كل قطعة نصنعها.
-              رضا عملائنا هو أولويتنا وهدفنا دائماً.
+              رضا عملائنا هو أولويتنا وهدفنا دائمًا.
             </p>
 
             <div className="grid grid-cols-2 gap-4">

@@ -43,8 +43,8 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2">
-            <img src={logo} alt="المعلم للموبيليات" className="w-10 h-10 md:w-12 md:h-12" />
-            <span className="text-lg md:text-xl font-bold text-gradient">المعلم للموبيليات</span>
+            <img src={logo} alt="ورشة أحمد وصابر" className="w-10 h-10 md:w-12 md:h-12" />
+            <span className="text-lg md:text-xl font-bold text-gradient">ورشة أحمد وصابر</span>
           </Link>
 
           {/* Desktop Nav */}
@@ -63,7 +63,7 @@ const Navbar = () => {
           {/* Actions */}
           <div className="flex items-center gap-3">
             <a
-              href="tel:+201001234567"
+              href="tel:+201021842186"
               className="p-2 rounded-full bg-primary text-primary-foreground hover:opacity-90 transition-colors"
               aria-label="اتصل بنا"
             >

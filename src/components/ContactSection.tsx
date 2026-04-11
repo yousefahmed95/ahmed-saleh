@@ -9,8 +9,8 @@ const ContactSection = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    const text = `مرحباً، أنا ${form.name}%0Aرقم هاتفي: ${form.phone}%0A${form.message}`;
-    window.open(`https://wa.me/201001234567?text=${text}`, "_blank");
+    const text = `مرحبًا، أنا ${form.name}%0Aرقم هاتفي: ${form.phone}%0A${form.message}`;
+    window.open(`https://wa.me/201558862770?text=${text}`, "_blank");
     toast.success("تم فتح الواتساب لإرسال رسالتك!");
     setForm({ name: "", phone: "", message: "" });
   };
@@ -88,7 +88,7 @@ const ContactSection = () => {
                 </div>
                 <div>
                   <h3 className="font-bold text-lg">رقم الهاتف</h3>
-                  <p className="text-muted-foreground" dir="ltr">+20 100 123 4567</p>
+                  <p className="text-muted-foreground" dir="ltr">+20 102 184 2186</p>
                 </div>
               </div>
             </div>
@@ -106,7 +106,7 @@ const ContactSection = () => {
             </div>
 
             <a
-              href="https://wa.me/201001234567"
+              href="https://wa.me/201558862770"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-4 bg-[#25D366]/10 rounded-2xl p-6 border border-[#25D366]/30 card-hover"
@@ -123,7 +123,7 @@ const ContactSection = () => {
             {/* Social */}
             <div className="flex gap-4">
               <a
-                href="https://facebook.com"
+                href="https://www.facebook.com/ahmd.salh.700051"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex-1 bg-card rounded-xl p-4 border border-border text-center card-hover font-semibold text-primary"
@@ -131,7 +131,7 @@ const ContactSection = () => {
                 فيسبوك
               </a>
               <a
-                href="tel:+201001234567"
+                href="tel:+201021842186"
                 className="flex-1 bg-card rounded-xl p-4 border border-border text-center card-hover font-semibold text-primary"
               >
                 اتصل بنا

@@ -25,7 +25,7 @@ const ProductPage = () => {
   const allImages = product.gallery.length > 0 ? product.gallery : [product.image];
 
   const whatsappMsg = encodeURIComponent(
-    `مرحباً، أنا مهتم بمنتج: ${product.name}\nالسعر: ${product.price.toLocaleString("ar-EG")} ج.م`
+    `مرحبًا، أنا مهتم بمنتج: ${product.name}\nالسعر: ${product.price.toLocaleString("ar-EG")} ج.م`
   );
 
   return (
@@ -133,7 +133,7 @@ const ProductPage = () => {
 
               {/* CTA */}
               <a
-                href={`https://wa.me/201001234567?text=${whatsappMsg}`}
+                href={`https://wa.me/201558862770?text=${whatsappMsg}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-primary w-full flex items-center justify-center gap-3 text-lg"
