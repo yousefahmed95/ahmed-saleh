@@ -100,7 +100,7 @@ const ContactSection = () => {
                 </div>
                 <div>
                   <h3 className="font-bold text-lg">عنوان الورشة</h3>
-                  <p className="text-muted-foreground">شارع النجارين، المنطقة الصناعية، القاهرة</p>
+                  <p className="text-muted-foreground">أسيوط - أول أسيوط - مصنع سيد - بجوار مسجد الشهداء</p>
                 </div>
               </div>
             </div>
